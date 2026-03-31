@@ -1,0 +1,202 @@
+2026-03-31 06:55:39,033 - INFO - ========== PIPELINE STARTED ==========
+2026-03-31 06:55:39,034 - INFO - === EXTRACT: Reading from Azure Blob Storage ===
+2026-03-31 06:55:39,104 - INFO - Request URL: 'https://optumpricingstorage.blob.core.windows.net/pricing-data/pricing_data.csv'
+Request method: 'GET'
+Request headers:
+    'x-ms-range': 'REDACTED'
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/xml'
+    'User-Agent': 'azsdk-python-storage-blob/12.28.0 Python/3.13.12 (Windows-11-10.0.26200-SP0)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '3ea05b4a-2cc6-11f1-80b2-b5f965864e7e'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2026-03-31 06:55:40,040 - INFO - Response status: 206
+Response headers:
+    'Content-Length': '89904'
+    'Content-Type': 'application/octet-stream'
+    'Content-Range': 'REDACTED'
+    'Last-Modified': 'Tue, 31 Mar 2026 05:54:05 GMT'
+    'Accept-Ranges': 'REDACTED'
+    'ETag': '"0x8DE8EE9EB0DB2E1"'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': '8e64da9e-b01e-0016-31d3-c003e3000000'
+    'x-ms-client-request-id': '3ea05b4a-2cc6-11f1-80b2-b5f965864e7e'
+    'x-ms-version': 'REDACTED'
+    'x-ms-creation-time': 'REDACTED'
+    'x-ms-blob-content-md5': 'REDACTED'
+    'x-ms-lease-status': 'REDACTED'
+    'x-ms-lease-state': 'REDACTED'
+    'x-ms-blob-type': 'REDACTED'
+    'x-ms-server-encrypted': 'REDACTED'
+    'x-ms-access-tier': 'REDACTED'
+    'x-ms-access-tier-inferred': 'REDACTED'
+    'Date': 'Tue, 31 Mar 2026 05:55:38 GMT'
+2026-03-31 06:55:40,332 - INFO - Extracted 1000 rows from blob
+2026-03-31 06:55:40,333 - INFO - === TRANSFORM: Cleaning and validating data ===
+2026-03-31 06:55:40,337 - INFO - Nulls found: 0
+2026-03-31 06:55:40,355 - INFO - Duplicates found: 0
+2026-03-31 06:55:40,379 - INFO - After transform: 694 rows, 11 columns
+2026-03-31 06:55:40,379 - INFO - === LOAD: Inserting into Azure SQL ===
+2026-03-31 06:56:18,327 - INFO - ========== PIPELINE STARTED ==========
+2026-03-31 06:56:18,327 - INFO - === EXTRACT: Reading from Azure Blob Storage ===
+2026-03-31 06:56:18,395 - INFO - Request URL: 'https://optumpricingstorage.blob.core.windows.net/pricing-data/pricing_data.csv'
+Request method: 'GET'
+Request headers:
+    'x-ms-range': 'REDACTED'
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/xml'
+    'User-Agent': 'azsdk-python-storage-blob/12.28.0 Python/3.13.12 (Windows-11-10.0.26200-SP0)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '560bcde9-2cc6-11f1-aa12-b5f965864e7e'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2026-03-31 06:56:19,321 - INFO - Response status: 206
+Response headers:
+    'Content-Length': '89904'
+    'Content-Type': 'application/octet-stream'
+    'Content-Range': 'REDACTED'
+    'Last-Modified': 'Tue, 31 Mar 2026 05:54:05 GMT'
+    'Accept-Ranges': 'REDACTED'
+    'ETag': '"0x8DE8EE9EB0DB2E1"'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': '0c9d1a35-001e-0013-41d3-c0d138000000'
+    'x-ms-client-request-id': '560bcde9-2cc6-11f1-aa12-b5f965864e7e'
+    'x-ms-version': 'REDACTED'
+    'x-ms-creation-time': 'REDACTED'
+    'x-ms-blob-content-md5': 'REDACTED'
+    'x-ms-lease-status': 'REDACTED'
+    'x-ms-lease-state': 'REDACTED'
+    'x-ms-blob-type': 'REDACTED'
+    'x-ms-server-encrypted': 'REDACTED'
+    'x-ms-access-tier': 'REDACTED'
+    'x-ms-access-tier-inferred': 'REDACTED'
+    'Date': 'Tue, 31 Mar 2026 05:56:18 GMT'
+2026-03-31 06:56:19,597 - INFO - Extracted 1000 rows from blob
+2026-03-31 06:56:19,599 - INFO - === TRANSFORM: Cleaning and validating data ===
+2026-03-31 06:56:19,600 - INFO - Nulls found: 0
+2026-03-31 06:56:19,603 - INFO - Duplicates found: 0
+2026-03-31 06:56:19,609 - INFO - After transform: 694 rows, 11 columns
+2026-03-31 06:56:19,609 - INFO - === LOAD: Inserting into Azure SQL ===
+2026-03-31 06:57:10,404 - INFO - ========== PIPELINE STARTED ==========
+2026-03-31 06:57:10,404 - INFO - === EXTRACT: Reading from Azure Blob Storage ===
+2026-03-31 06:57:10,472 - INFO - Request URL: 'https://optumpricingstorage.blob.core.windows.net/pricing-data/pricing_data.csv'
+Request method: 'GET'
+Request headers:
+    'x-ms-range': 'REDACTED'
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/xml'
+    'User-Agent': 'azsdk-python-storage-blob/12.28.0 Python/3.13.12 (Windows-11-10.0.26200-SP0)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '75161043-2cc6-11f1-ab90-b5f965864e7e'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2026-03-31 06:57:11,395 - INFO - Response status: 206
+Response headers:
+    'Content-Length': '89904'
+    'Content-Type': 'application/octet-stream'
+    'Content-Range': 'REDACTED'
+    'Last-Modified': 'Tue, 31 Mar 2026 05:54:05 GMT'
+    'Accept-Ranges': 'REDACTED'
+    'ETag': '"0x8DE8EE9EB0DB2E1"'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': 'ca13b570-c01e-0033-75d3-c0aa9f000000'
+    'x-ms-client-request-id': '75161043-2cc6-11f1-ab90-b5f965864e7e'
+    'x-ms-version': 'REDACTED'
+    'x-ms-creation-time': 'REDACTED'
+    'x-ms-blob-content-md5': 'REDACTED'
+    'x-ms-lease-status': 'REDACTED'
+    'x-ms-lease-state': 'REDACTED'
+    'x-ms-blob-type': 'REDACTED'
+    'x-ms-server-encrypted': 'REDACTED'
+    'x-ms-access-tier': 'REDACTED'
+    'x-ms-access-tier-inferred': 'REDACTED'
+    'Date': 'Tue, 31 Mar 2026 05:57:10 GMT'
+2026-03-31 06:57:11,691 - INFO - Extracted 1000 rows from blob
+2026-03-31 06:57:11,694 - INFO - === TRANSFORM: Cleaning and validating data ===
+2026-03-31 06:57:11,695 - INFO - Nulls found: 0
+2026-03-31 06:57:11,698 - INFO - Duplicates found: 0
+2026-03-31 06:57:11,705 - INFO - After transform: 694 rows, 11 columns
+2026-03-31 06:57:11,705 - INFO - === LOAD: Inserting into Azure SQL ===
+2026-03-31 06:59:41,597 - INFO - ========== PIPELINE STARTED ==========
+2026-03-31 06:59:41,597 - INFO - === EXTRACT: Reading from Azure Blob Storage ===
+2026-03-31 06:59:41,668 - INFO - Request URL: 'https://optumpricingstorage.blob.core.windows.net/pricing-data/pricing_data.csv'
+Request method: 'GET'
+Request headers:
+    'x-ms-range': 'REDACTED'
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/xml'
+    'User-Agent': 'azsdk-python-storage-blob/12.28.0 Python/3.13.12 (Windows-11-10.0.26200-SP0)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': 'cf34b4c4-2cc6-11f1-8ed7-b5f965864e7e'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2026-03-31 06:59:42,607 - INFO - Response status: 206
+Response headers:
+    'Content-Length': '89904'
+    'Content-Type': 'application/octet-stream'
+    'Content-Range': 'REDACTED'
+    'Last-Modified': 'Tue, 31 Mar 2026 05:54:05 GMT'
+    'Accept-Ranges': 'REDACTED'
+    'ETag': '"0x8DE8EE9EB0DB2E1"'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': '329be703-501e-006c-0dd3-c01ea3000000'
+    'x-ms-client-request-id': 'cf34b4c4-2cc6-11f1-8ed7-b5f965864e7e'
+    'x-ms-version': 'REDACTED'
+    'x-ms-creation-time': 'REDACTED'
+    'x-ms-blob-content-md5': 'REDACTED'
+    'x-ms-lease-status': 'REDACTED'
+    'x-ms-lease-state': 'REDACTED'
+    'x-ms-blob-type': 'REDACTED'
+    'x-ms-server-encrypted': 'REDACTED'
+    'x-ms-access-tier': 'REDACTED'
+    'x-ms-access-tier-inferred': 'REDACTED'
+    'Date': 'Tue, 31 Mar 2026 05:59:41 GMT'
+2026-03-31 06:59:42,900 - INFO - Extracted 1000 rows from blob
+2026-03-31 06:59:42,902 - INFO - === TRANSFORM: Cleaning and validating data ===
+2026-03-31 06:59:42,903 - INFO - Nulls found: 0
+2026-03-31 06:59:42,906 - INFO - Duplicates found: 0
+2026-03-31 06:59:42,913 - INFO - After transform: 694 rows, 11 columns
+2026-03-31 06:59:42,913 - INFO - === LOAD: Inserting into Azure SQL ===
+2026-03-31 07:00:01,347 - INFO - Loaded 694 rows into Azure SQL PricingPipeline table
+2026-03-31 07:00:01,348 - INFO - ========== PIPELINE COMPLETE ==========
+2026-03-31 07:17:08,258 - INFO - ========== PIPELINE STARTED ==========
+2026-03-31 07:17:08,259 - INFO - === EXTRACT: Reading from Azure Blob Storage ===
+2026-03-31 07:17:08,386 - INFO - Request URL: 'https://optumpricingstorage.blob.core.windows.net/pricing-data/pricing_data.csv'
+Request method: 'GET'
+Request headers:
+    'x-ms-range': 'REDACTED'
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/xml'
+    'User-Agent': 'azsdk-python-storage-blob/12.28.0 Python/3.13.12 (Windows-11-10.0.26200-SP0)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '3f18ff44-2cc9-11f1-8612-b5f965864e7e'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2026-03-31 07:17:09,405 - INFO - Response status: 206
+Response headers:
+    'Content-Length': '89904'
+    'Content-Type': 'application/octet-stream'
+    'Content-Range': 'REDACTED'
+    'Last-Modified': 'Tue, 31 Mar 2026 05:54:05 GMT'
+    'Accept-Ranges': 'REDACTED'
+    'ETag': '"0x8DE8EE9EB0DB2E1"'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': '2fa4272c-101e-000f-30d6-c08358000000'
+    'x-ms-client-request-id': '3f18ff44-2cc9-11f1-8612-b5f965864e7e'
+    'x-ms-version': 'REDACTED'
+    'x-ms-creation-time': 'REDACTED'
+    'x-ms-blob-content-md5': 'REDACTED'
+    'x-ms-lease-status': 'REDACTED'
+    'x-ms-lease-state': 'REDACTED'
+    'x-ms-blob-type': 'REDACTED'
+    'x-ms-server-encrypted': 'REDACTED'
+    'x-ms-access-tier': 'REDACTED'
+    'x-ms-access-tier-inferred': 'REDACTED'
+    'Date': 'Tue, 31 Mar 2026 06:17:07 GMT'
+2026-03-31 07:17:09,705 - INFO - Extracted 1000 rows from blob
+2026-03-31 07:17:09,708 - INFO - === TRANSFORM: Cleaning and validating data ===
+2026-03-31 07:17:09,711 - INFO - Nulls found: 0
+2026-03-31 07:17:09,726 - INFO - Duplicates found: 0
+2026-03-31 07:17:09,740 - INFO - After transform: 694 rows, 11 columns
+2026-03-31 07:17:09,740 - INFO - === LOAD: Inserting into Azure SQL ===

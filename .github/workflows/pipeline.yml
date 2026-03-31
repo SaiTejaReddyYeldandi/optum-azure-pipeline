@@ -1,0 +1,29 @@
+name: Azure Pipeline CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.11'
+
+    - name: Install dependencies
+      run: |
+        pip install pandas pyodbc azure-storage-blob azure-identity faker pytest sqlalchemy
+
+    - name: Run tests
+      env:
+        STORAGE_CONN_STR: ${{ secrets.STORAGE_CONN_STR }}
+      run: |
+        python -m pytest test_pipeline.py -v
