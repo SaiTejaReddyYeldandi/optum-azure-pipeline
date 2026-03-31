@@ -1,5 +1,3 @@
-# optum-azure-pipeline
-
 AZURE RESOURCES
 Resource Group:   optum-pipeline-rg1
 SQL Server:       optum-sql-server.database.windows.net
